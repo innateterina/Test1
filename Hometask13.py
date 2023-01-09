@@ -41,10 +41,10 @@ def func_1():
     elif answer_2.upper() in ('Н', 'н'):
         print('Вы загадали число 4')
     if answer_3.upper() in ('Д', 'д'):
-        print('Вы загадали число 8'
+        print('Вы загадали число 8')
     elif answer_3.upper() in ('Н', 'н'):
         print('Вы загадали число 6')
 
     return
 
-
+print(func_1())
