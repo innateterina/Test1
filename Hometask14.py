@@ -25,7 +25,7 @@ def func_1(number):
            if number.isdigit():
                 print('вы ввели целое отрицательное число:', number)
         elif number.replace('.', '', 1):
-            if number.matches('0+') and number.isdigit():
+            if (number.matches('0+')) and number.isdigit():
                 if True:
                     print(('вы  ввели ноль'))
             elif number.isdigit():
