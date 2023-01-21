@@ -56,4 +56,39 @@ while True:
         answer = input('Для выхода из цикла введите:выход/exit/quit/e/q: ')
         if answer.upper() in ('exit', 'quit', 'e', 'q', 'выход'):
             break
+---------------------------------------
+def func_1(number):
+    if number.isdigit():
+        if number.__contains__('0') and len(number) == 1:
+            print('вы  ввели ноль')
+        elif int(number) > 0:
+            print('вы ввели целое положительное число:', number)
+    elif number.isdigit() == False:
+        if number.replace('-', '', 1) and number.isdigit():
+            print('вы ввели целое отрицательное число:', number)
+        elif number.replace('.', '', 1) and number.isdigit():
+                print('вы ввели положительное дробное число:', number)
+        elif number.replace('.', '', 1) and number.replace('-', '', 1):
+            if number.isdigit():
+                print('вы ввели положительное дробное число:', number)
+            else:
+                print('вы ввели некоректное число')
+        else:
+            print('вы ввели некоректное число')
+    else:
+        print('вы ввели некоректное число')
+        return
 
+while True:
+        number = input('введите число: ')
+        number = number.replace(',', '.')
+        if number[0] == 0 and number[1] == '.':
+            number.replace('0', '', 1)
+        if number != number.isalpha():
+            func_1(number)
+        else:
+            print('Вы ввели некорректное число')
+
+        answer = input('Для выхода из цикла введите:выход/exit/quit/e/q: ')
+        if answer.upper() in ('exit', 'quit', 'e', 'q', 'выход'):
+            break
