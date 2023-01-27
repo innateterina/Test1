@@ -4,7 +4,7 @@
 #Методы move и stop выводят сообщение на экран «move» и «stop»,а birthday увеличивает атрибут age на 1.
 #Атрибуты brand, age и mark являются обязательными при объявлении объекта.
 
-class Auto:
+class Auto(object):
     brand = 'Ford'
     age = 5
     mark = 'Focus'
@@ -23,5 +23,5 @@ class Auto:
         print("stop")
 
     def birthday(self):
-        age += 1
+        self.age += 1
 
