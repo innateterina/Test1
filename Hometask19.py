@@ -14,7 +14,6 @@ for item in data:
     value.insert(0, item)
     value.insert(3, '')
     fields.append(value)
-print(fields)
 
 with open("voc_file02.csv", mode='w', encoding='utf-8') as w_file:
     file_writer = csv.writer(w_file)
