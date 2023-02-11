@@ -9,3 +9,4 @@ def geometric_progression(a, b):
 
 for x in geometric_progression(5, 10):
     print(x)
+
